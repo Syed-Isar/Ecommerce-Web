@@ -1,0 +1,63 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.homeHead{
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+}
+
+.navLogo img{
+  width: 150px;
+  height: 100px;
+}
+
+.navList ul{
+  /* border: 2px solid black; */
+  gap: 50px;
+  display: flex;
+  list-style-type: none;
+  flex-direction: row;
+  /* font-size: 1.3rem; */
+  color: grey;
+}
+
+.navIcon{
+  color: grey;
+  width: 10%;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+
+/* Keep the rest of your CSS rules */
+
+.arrival-dropdown {
+  position: relative; /* Needed for absolute positioning */
+}
+
+.arrival-dropdown-list {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below the menu item */
+  left: 0; /* Align the dropdown with the left edge of the menu item */
+  width: 100%; /* Make the dropdown full width */
+  background-color: #fff; /* Add background color */
+  padding: 10px; /* Add padding for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+  z-index: 1; /* Ensure the dropdown appears above other content */
+}
+
+.arrival-dropdown:hover .arrival-dropdown-list {
+  display: block; /* Show the dropdown when hovering over the menu item */
+}
+
+.arrival-dropdown-list li {
+  display: block; /*Display list items in a column */
+  margin-bottom: 5px; /* Add margin between list items */
+}
