@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 .homeHead{
-  /* border: 2px solid black; */
   display: flex;
   justify-content:space-between;
   align-items: center;
@@ -18,13 +17,14 @@
 }
 
 .navList ul{
-  /* border: 2px solid black; */
-  gap: 50px;
+  gap: 40px;
   display: flex;
   list-style-type: none;
   flex-direction: row;
-  /* font-size: 1.3rem; */
-  color: grey;
+  padding: 12px 8px;
+  color: rgb(18, 8, 18);
+  font-size: 1.2rem;
+  position: relative;
 }
 
 .navIcon{
@@ -34,30 +34,103 @@
   justify-content:space-evenly;
 }
 
+.navList ul li{
+  position: relative;
+  margin-bottom: 12px;
+}
+.navList ul li a{
+  text-decoration: none;
+  color: rgb(18, 8, 18);
+}
+.navList ul li:hover{
 
-/* Keep the rest of your CSS rules */
-
-.arrival-dropdown {
-  position: relative; /* Needed for absolute positioning */
+  padding: 3px;
+  background-color:rgb(245, 244, 244);
 }
 
-.arrival-dropdown-list {
+
+.arrival-dropdown-menu{
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color:rgb(245, 244, 244);
+}
+.arrival-dropdown-menu ul{
+  display: none;
+}
+.arrival-dropdown:hover .arrival-dropdown-menu ul {
+  display: block;
+  color: #696969;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 5px 46px 1px 2px;
+  margin: 0;
+}
+
+
+
+
+/* .arrival-dropdown span:hover {
+  padding: 7px;
+  background-color: rgba(241, 230, 230, 0.603);
+} */
+/* 
+#arrival-dropdown-menu{
+  width: 7.3%;
   display: none;
   position: absolute;
-  top: 100%; /* Position the dropdown below the menu item */
-  left: 0; /* Align the dropdown with the left edge of the menu item */
-  width: 100%; /* Make the dropdown full width */
-  background-color: #fff; /* Add background color */
-  padding: 10px; /* Add padding for spacing */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  z-index: 1; /* Ensure the dropdown appears above other content */
+  color: rgb(97, 95, 95);
+  font-weight: 100;
+
+ }
+
+
+.arrival-dropdown:hover #arrival-dropdown-menu {
+  display: grid;
+  gap:12px;
+  background-color: rgba(241, 230, 230, 0.603);
+  padding: 10px;
 }
 
-.arrival-dropdown:hover .arrival-dropdown-list {
-  display: block; /* Show the dropdown when hovering over the menu item */
+.men-dropdown{
+  display: flex;
+  gap: 70px;
+}
+#top-dropdown-menu{
+  position:absolute;
+  display: grid;
+  
+  margin-top: 3%;
+  gap: 10px;
+  align-items: center;
 }
 
-.arrival-dropdown-list li {
-  display: block; /*Display list items in a column */
-  margin-bottom: 5px; /* Add margin between list items */
+#sleepwear-dropdown-menu{
+  position:absolute;
+  display: grid;
+  margin-top: 1%;
+  gap: 10px;
 }
+
+#activewear-dropdown-menu{
+  position:absolute;
+  display: grid;
+  margin-top: 1%;
+  gap: 10px;
+}
+
+#footwear-dropdown-menu{
+  position:absolute;
+  display: grid;
+  margin-top: 1%;
+  gap: 10px;
+}
+
+#accesorries-dropdown-menu{
+  position:absolute;
+  display: grid;
+  margin-top: 1%;
+  gap: 10px;
+
+} */
