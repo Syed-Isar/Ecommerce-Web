@@ -1,150 +1,92 @@
 function HomePage() {
-    return(
+    return (
         <div>
-            <header className ="homeHead">
+            <header className="homeHead">
                 <div className="navLogo">
                     <img src="./images/logo.jpg" alt="logo" />
                 </div>
-                <div className ="navList">
+                <div className="navList">
                     <ul>
-                        <li> <a href ="#">Weekly Deals </a></li>
-                    <li className = "arrival-dropdown">
-                            <a href = "#">New Arrivals</a>
-                            <i class ="fa fa-chevron-down" aria-hidden = "true"></i>
-                            <div class ="arrival-dropdown-menu">
-                        <ul>
-                            <li>Men</li>
-                            <li>Women</li>
-                            <li>Kids</li>
-                        </ul>
+                        <li> <a href="#">Weekly Deals </a></li>
+                        <li className="arrival-dropdown">
+                            <a href="#">New Arrivals</a>
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                            <div class="arrival-dropdown-menu">
+                                <ul>
+                                    <li>Men</li>
+                                    <li>Women</li>
+                                    <li>Kids</li>
+                                </ul>
                             </div>
-                    </li>
-                        <li><a href = "#">Men</a></li>
-                        {/* <div class = "men-dropdown">
-                            <span>Tops
-                                <ul id = "top-dropdown-menu">
-                                    <li>Tees</li>
-                                    <li>Polos</li>
-                                    <li>Shirts</li>
-                                    <li>Outerwear</li>
-                                    <li>Ethnic Wear</li>
-                                </ul>
-                                </span>
-                            <span>Bottom & Sleepwear
-                            <ul id = "sleepwear-dropdown-menu" >
-                                    <li>Tees</li>
-                                    <li>Polos</li>
-                                    <li>Shirts</li>
-                                    <li>Outerwear</li>
-                                    <li>Ethnic Wear</li>
+                        </li>
+                        <li className="men-dropdown">
+                            <a href="#">Men</a></li>
+                        <div className="men-dropdown-menu">
+                            <ul>
+                                <li>
+                                    <span>Tops</span>
+                                    <ul id="top-dropdown-menu">
+                                        <li>Tees</li>
+                                        <li>Polos</li>
+                                        <li>Shirts</li>
+                                        <li>Outerwear</li>
+                                        <li>Ethnic Wear</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <span>Bottom & Sleepwear</span>
+                                    <ul id="sleepwear-dropdown-menu">
+                                        <li>Jeans</li>
+                                        <li>Trouser & Pants</li>
+                                        <li>Shorts</li>
+                                        <li>Sleepwear</li>
+                                    </ul>
 
-                                </ul>
-                            </span>
-                            <span>Activewear
-                            <ul id = "activewear-dropdown-menu">
-                                    <li>Tees</li>
-                                    <li>Polos</li>
-                                    <li>Shirts</li>
-                                    <li>Outerwear</li>
-                                    <li>Ethnic Wear</li>
+                                </li>
+                                <li>
+                                    <span>Activewear</span>
+                                    <ul id="activewear-dropdown-menu">
+                                        <li>Tops</li>
+                                        <li>Bottoms</li>
+                                        <li>Tracksuits</li>
+                                    </ul>
 
-                                </ul>
-                            </span>
-                            <span>Footwear
-                            <ul id = "footwear-dropdown-menu">
-                                    <li>Tees</li>
-                                    <li>Polos</li>
-                                    <li>Shirts</li>
-                                    <li>Outerwear</li>
-                                    <li>Ethnic Wear</li>
+                                </li>
+                                <li>
+                                    <span>Footwear</span>
+                                    <ul id="footwear-dropdown-menu">
+                                        <li>Shoes</li>
+                                        <li>Socks</li>
+                                    </ul>
 
-                                </ul>
-                            </span>
-                            <span>Accesorries
-                            <ul id = "accesorries-dropdown-menu">
-                                    <li>Tees</li>
-                                    <li>Polos</li>
-                                    <li>Shirts</li>
-                                    <li>Outerwear</li>
-                                    <li>Ethnic Wear</li>
+                                </li>
+                                <li>
+                                    <span>Accesories</span>
+                                    <ul id="accesories-dropdown-menu">
+                                        <li>Underwear</li>
+                                        <li>Caps & Hats</li>
+                                        <li>Bags,Belts & Wallets</li>
+                                        <li>Eyewear</li>
+                                        <li>Gloves & Scarves</li>
+                                        <li>Health & Grooming</li>
+                                        <li>Fragnances</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
 
-                                </ul>
-                            </span>
-
-                        </div> */}
-                        {/* <table>
-                            <tr>
-                                <th>Top</th>
-                                <th>Bottom & Sleepwears</th>
-                                <th>Active Wear</th>
-                                <th>Footwear</th>
-                                <th>Accesorries</th>
-                            </tr>
-                            <tbody>
-                                <tr>
-                                    <td>Tees</td>
-                                    <td>Jeans</td>
-                                    <td>Tops</td>
-                                    <td>Shoes</td>
-                                    <td>Underwear</td>
-                                </tr>
-                                <tr>
-                                    <td>Polos</td>
-                                    <td>Trouser & Wears</td>
-                                    <td>Bottom</td>
-                                    <td>Socks</td>
-                                    <td>Caps & Hats</td>
-                                </tr>
-                                <tr>
-                                    <td>Shirts</td>
-                                    <td>Shorts</td>
-                                    <td>Tracksuits</td>
-                                    <td></td>
-                                    <td>Bags,Belts & Wallets</td>
-                                </tr>
-                                <tr>
-                                    <td>Outerwear</td>
-                                    <td>Sleepwear</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Eyewear</td>
-                                </tr>
-                                <tr>
-                                    <td>Ethnic Wear</td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Gloves & Scarves</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Health & Grooming</td>
-                                </tr>
-                                <tr>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td></td>
-                                    <td>Fragnances</td>
-                                </tr>
-                               
-                            </tbody>
-                        </table> */}
-                        <li><a href ="#">Women</a></li>
-                        <li><a href ="#">Kids</a></li>
-                        <li><a href ="#">Polo Republica</a></li>
-                        <li><a href ="#">Home</a></li>
-                        <li><a href ="#">Minor Fault</a></li>
-                        <li><a href ="#">Clearance</a></li>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Polo Republica</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Minor Fault</a></li>
+                        <li><a href="#">Clearance</a></li>
                     </ul>
                 </div>
-                <div className ="navIcon">
-                <i class="fa fa-search"></i>
-                <i class="fa fa-user" ></i>
-                <i class="fa fa-shopping-cart"></i>
+                <div className="navIcon">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-user" ></i>
+                    <i class="fa fa-shopping-cart"></i>
 
                 </div>
             </header>

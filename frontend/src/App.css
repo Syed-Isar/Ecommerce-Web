@@ -16,15 +16,16 @@
   height: 100px;
 }
 
+
 .navList ul{
-  gap: 40px;
+  gap: 60px;
   display: flex;
   list-style-type: none;
-  flex-direction: row;
   padding: 12px 8px;
   color: rgb(18, 8, 18);
   font-size: 1.2rem;
   position: relative;
+  /* margin-left: 0.5rem; */
 }
 
 .navIcon{
@@ -36,7 +37,8 @@
 
 .navList ul li{
   position: relative;
-  margin-bottom: 12px;
+  /* margin-bottom: -15px; */
+  padding: 3px;
 }
 .navList ul li a{
   text-decoration: none;
@@ -44,9 +46,10 @@
 }
 .navList ul li:hover{
 
-  padding: 3px;
+  padding:3px;
   background-color:rgb(245, 244, 244);
 }
+
 
 
 .arrival-dropdown-menu{
@@ -68,69 +71,49 @@
   margin: 0;
 }
 
-
-
-
-/* .arrival-dropdown span:hover {
-  padding: 7px;
-  background-color: rgba(241, 230, 230, 0.603);
-} */
-/* 
 #arrival-dropdown-menu{
   width: 7.3%;
   display: none;
   position: absolute;
   color: rgb(97, 95, 95);
   font-weight: 100;
-
- }
-
-
-.arrival-dropdown:hover #arrival-dropdown-menu {
-  display: grid;
-  gap:12px;
-  background-color: rgba(241, 230, 230, 0.603);
-  padding: 10px;
 }
 
-.men-dropdown{
+
+.men-dropdown-menu{
+  display: none;
+  width: 1650px;
+  left: -200px;
+  border: 1px solid black;
+  margin-top: 35px;
+  position: absolute;
+
+}
+
+.navList ul li.men-dropdown:hover .men-dropdown-menu {
+  display: block;
+}
+
+.men-dropdown-menu ul{
+  gap: 0;
+  font-size: medium;
+}
+.men-dropdown-menu span{
+  font-weight: bold;
+}
+
+.men-dropdown-menu ul{
   display: flex;
-  gap: 70px;
-}
-#top-dropdown-menu{
-  position:absolute;
-  display: grid;
-  
-  margin-top: 3%;
-  gap: 10px;
-  align-items: center;
-}
+  justify-content: space-between;
+} 
 
-#sleepwear-dropdown-menu{
-  position:absolute;
-  display: grid;
-  margin-top: 1%;
-  gap: 10px;
+#top-dropdown-menu,
+#sleepwear-dropdown-menu,
+#activewear-dropdown-menu,
+#footwear-dropdown-menu,
+#accesories-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+  margin-left: -10px;
 }
-
-#activewear-dropdown-menu{
-  position:absolute;
-  display: grid;
-  margin-top: 1%;
-  gap: 10px;
-}
-
-#footwear-dropdown-menu{
-  position:absolute;
-  display: grid;
-  margin-top: 1%;
-  gap: 10px;
-}
-
-#accesorries-dropdown-menu{
-  position:absolute;
-  display: grid;
-  margin-top: 1%;
-  gap: 10px;
-
-} */
