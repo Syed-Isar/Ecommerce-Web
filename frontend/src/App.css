@@ -82,17 +82,22 @@
 
 .men-dropdown-menu{
   display: none;
-  width: 1650px;
-  left: -200px;
+  width: 1500px;
+  left: -500px;
   border: 1px solid black;
-  margin-top: 35px;
+  background-color:rgba(245, 244, 244, 0.658);
+  margin-top: 15px;
   position: absolute;
 
 }
 
-.navList ul li.men-dropdown:hover .men-dropdown-menu {
+
+
+.men-dropdown:hover  .men-dropdown-menu {
   display: block;
 }
+
+
 
 .men-dropdown-menu ul{
   gap: 0;
@@ -112,6 +117,170 @@
 #activewear-dropdown-menu,
 #footwear-dropdown-menu,
 #accesories-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+  margin-left: -10px;
+}
+
+
+.women-dropdown-menu{
+  display: none;
+  width: 1500px;
+  left: -500px;
+  border: 1px solid black;
+  background-color:rgba(245, 244, 244, 0.658);
+  margin-top: 15px;
+  position: absolute;
+
+}
+
+
+
+.women-dropdown:hover  .women-dropdown-menu {
+  display: block;
+}
+
+
+
+.women-dropdown-menu ul{
+  gap: 0;
+  font-size: medium;
+}
+.women-dropdown-menu span{
+  font-weight: bold;
+}
+
+.women-dropdown-menu ul{
+  display: flex;
+  justify-content: space-between;
+} 
+
+#ready-dropdown-menu,
+#activewear-dropdown-menu,
+#lingerie-dropdown-menu,
+#footwear-dropdown-menu,
+#accesories-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+  margin-left: -10px;
+}
+
+
+.kids-dropdown-menu{
+  display: none;
+  width: 1500px;
+  left: -700px;
+  border: 1px solid black;
+  background-color:rgba(245, 244, 244, 0.658);
+  margin-top: 15px;
+  position: absolute;
+
+}
+
+.kids-dropdown:hover  .kids-dropdown-menu {
+  display: block;
+}
+
+.kids-dropdown-menu ul{
+  gap: 0;
+  font-size: medium;
+}
+
+.kids-dropdown-menu span{
+  font-weight: bold;
+}
+
+.kids-dropdown-menu ul{
+  display: flex;
+  justify-content: space-between;
+} 
+
+#baby-dropdown-menu,
+#boys-dropdown-menu,
+#girls-dropdown-menu,
+#footwear-dropdown-menu,
+#accesories-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+  margin-left: -10px;
+}
+
+.polorepublica-dropdown-menu{
+  display: none;
+  width: 1500px;
+  left: -800px;
+  border: 1px solid black;
+  background-color:rgba(245, 244, 244, 0.658);
+  margin-top: 15px;
+  position: absolute;
+
+}
+
+.polorepublica-dropdown:hover  .polorepublica-dropdown-menu {
+  display: block;
+}
+
+.polorepublica-dropdown-menu ul{
+  gap: 0;
+  font-size: medium;
+}
+
+.polorepublica-dropdown-menu span{
+  font-weight: bold;
+}
+
+.polorepublica-dropdown-menu ul{
+  display: flex;
+  justify-content: space-between;
+} 
+
+#top-dropdown-menu,
+#sleepwear-dropdown-menu,
+#activewear-dropdown-menu,
+#footwear-dropdown-menu{
+  display: flex;
+  flex-direction: column;
+  font-weight: 100;
+  margin-left: -10px;
+}
+
+
+.home-dropdown-menu{
+  display: none;
+  width: 1500px;
+  left: -1000px;
+  border: 1px solid black;
+  background-color:rgba(245, 244, 244, 0.658);
+  margin-top: 15px;
+  position: absolute;
+
+}
+
+.home-dropdown:hover  .home-dropdown-menu {
+  display: block;
+}
+
+.home-dropdown-menu ul{
+  gap: 0;
+  font-size: medium;
+}
+
+.home-dropdown-menu span{
+  font-weight: bold;
+}
+
+.home-dropdown-menu ul{
+  display: flex;
+  justify-content: space-between;
+} 
+
+#top-dropdown-menu,
+#sleepwear-dropdown-menu,
+#activewear-dropdown-menu,
+#footwear-dropdown-menu{
   display: flex;
   flex-direction: column;
   font-weight: 100;
